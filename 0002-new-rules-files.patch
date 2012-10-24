@@ -1,0 +1,37 @@
+From e6f81154d2ef99e056241f01697ce62f1501e823 Mon Sep 17 00:00:00 2001
+From: William Woodall <wjwwood@gmail.com>
+Date: Tue, 23 Oct 2012 17:20:40 -0700
+Subject: [PATCH 2/3] new rules files
+
+---
+ debian/rules |   18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+ create mode 100644 debian/rules
+
+diff --git a/debian/rules b/debian/rules
+new file mode 100644
+index 0000000..e8162e2
+--- /dev/null
++++ b/debian/rules
+@@ -0,0 +1,18 @@
++#! /usr/bin/make -f
++# Uncomment this to turn on verbose mode.
++export DH_VERBOSE=1
++export DH_OPTIONS=-v
++
++%:
++	dh  $@
++
++override_dh_auto_configure:
++	dh_auto_configure -- \
++		--prefix="/opt/ros/groovy"
++
++override_dh_auto_test:
++	echo -- Running tests. Even if one of them fails the build is not canceled.
++	dh_auto_test || true
++
++override_dh_installdocs:
++	dh_installdoc || true
+-- 
+1.7.9.5
+

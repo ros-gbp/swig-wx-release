@@ -1,0 +1,25 @@
+From 08409a3b446afb62a187b4dd9ccc163f3b433627 Mon Sep 17 00:00:00 2001
+From: William Woodall <wjwwood@gmail.com>
+Date: Tue, 23 Oct 2012 17:22:12 -0700
+Subject: [PATCH 3/3] fixing install prefix in rules file
+
+---
+ debian/rules |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/debian/rules b/debian/rules
+index e8162e2..9f1e03a 100644
+--- a/debian/rules
++++ b/debian/rules
+@@ -8,7 +8,7 @@ export DH_OPTIONS=-v
+ 
+ override_dh_auto_configure:
+ 	dh_auto_configure -- \
+-		--prefix="/opt/ros/groovy"
++		--prefix="/opt/ros/fuerte"
+ 
+ override_dh_auto_test:
+ 	echo -- Running tests. Even if one of them fails the build is not canceled.
+-- 
+1.7.9.5
+
