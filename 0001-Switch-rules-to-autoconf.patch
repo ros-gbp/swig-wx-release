@@ -1,4 +1,4 @@
-From 9db840a8cf1ab2ce5283721ecc93ec06ee9fedd9 Mon Sep 17 00:00:00 2001
+From 8cbdefaac51104b8a03dc36c364432af4bf2ccf5 Mon Sep 17 00:00:00 2001
 From: William Woodall <wjwwood@gmail.com>
 Date: Sun, 11 Nov 2012 21:22:18 -0800
 Subject: [PATCH] Switch rules to autoconf
