@@ -1,0 +1,38 @@
+From 370f4859575f6d329794235e3fd5a9e4f5e3b671 Mon Sep 17 00:00:00 2001
+From: Tully Foote <tfoote@willowgarage.com>
+Date: Mon, 12 Nov 2012 02:01:13 -0800
+Subject: [PATCH 2/2] fixing spacing
+
+---
+ debian/rules |   12 ++++++------
+ 1 files changed, 6 insertions(+), 6 deletions(-)
+
+diff --git a/debian/rules b/debian/rules
+index 408c0ed..58c05b9 100644
+--- a/debian/rules
++++ b/debian/rules
+@@ -4,15 +4,15 @@ export DH_VERBOSE=1
+ export DH_OPTIONS=-v
+ 
+ %:
+-    dh  $@
++	dh  $@
+ 
+ override_dh_auto_configure:
+-    dh_auto_configure -- \
+-        --prefix="/opt/ros/groovy"
++	dh_auto_configure -- \
++             --prefix="/opt/ros/groovy"
+ 
+ override_dh_auto_test:
+-    echo -- Running tests. Even if one of them fails the build is not canceled.
+-    dh_auto_test || true
++	echo -- Running tests. Even if one of them fails the build is not canceled.
++	dh_auto_test || true
+ 
+ override_dh_installdocs:
+-    dh_installdoc || true
++	dh_installdoc || true
+-- 
+1.7.0.4
+
