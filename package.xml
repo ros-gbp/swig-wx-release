@@ -19,5 +19,4 @@
 
   <build_depend>autoconf</build_depend>
   <build_depend>automake</build_depend>
-  <build_depend>catkin</build_depend>
 </package>
