@@ -1,4 +1,4 @@
-From 30f3f6f264df29df9c9552221d151fcbc31f5eb8 Mon Sep 17 00:00:00 2001
+From dd05cdb082a8ffcefe9748b5b4b8d6d79a09bbb8 Mon Sep 17 00:00:00 2001
 From: William Woodall <wjwwood@gmail.com>
 Date: Tue, 23 Oct 2012 17:36:35 -0700
 Subject: [PATCH] replacing rules file
@@ -85,5 +85,5 @@ index 59b70bd..e8162e2 100755
 +override_dh_installdocs:
 +	dh_installdoc || true
 -- 
-1.7.9.5
+1.7.10.2 (Apple Git-33)
 
