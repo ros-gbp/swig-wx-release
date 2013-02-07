@@ -1,0 +1,22 @@
+From e0b8e5a7a0d2943ec953f89f882aa1dd16648914 Mon Sep 17 00:00:00 2001
+From: William Woodall <wjwwood@gmail.com>
+Date: Mon, 12 Nov 2012 00:43:08 -0800
+Subject: [PATCH] Remove the dependecy on catkin
+
+---
+ package.xml |    1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/package.xml b/package.xml
+index 3435fd0..b4e4b24 100644
+--- a/package.xml
++++ b/package.xml
+@@ -19,5 +19,4 @@
+ 
+   <build_depend>autoconf</build_depend>
+   <build_depend>automake</build_depend>
+-  <build_depend>catkin</build_depend>
+ </package>
+-- 
+1.7.10.2 (Apple Git-33)
+
