@@ -1,0 +1,25 @@
+From 98cc902322d862efa9bc8eaca5ddd613910d707b Mon Sep 17 00:00:00 2001
+From: William Woodall <wjwwood@gmail.com>
+Date: Thu, 7 Feb 2013 13:35:57 -0800
+Subject: [PATCH] remove catkin dep
+
+---
+ package.xml |    2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/package.xml b/package.xml
+index 64bd8e3..b4e4b24 100644
+--- a/package.xml
++++ b/package.xml
+@@ -17,8 +17,6 @@
+   <url type="repository">https://github.com/ros/swig-wx</url>
+   <url type="bugtracker">https://github.com/ros/swig-wx/issues</url>
+ 
+-  <buildtool_depend>catkin</buildtool_depend>
+-
+   <build_depend>autoconf</build_depend>
+   <build_depend>automake</build_depend>
+ </package>
+-- 
+1.7.10.2 (Apple Git-33)
+
